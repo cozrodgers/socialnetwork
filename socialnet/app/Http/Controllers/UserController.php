@@ -30,11 +30,10 @@ class UserController extends Controller{
         return view('dashboard');
     }
 
-
     public function postSignIn(Request $request)
     {
-       if (Auth::attempt(['email' -> $request['email'],'password' -> $request['password']])) {
-        return redirect()->route('dashboard');
+       if (Auth::attempt(['email' => $request['email'], 'password' => $request['password']])) {
+return redirect()->route('dashboard');
        }
 
        return redirect()->back();

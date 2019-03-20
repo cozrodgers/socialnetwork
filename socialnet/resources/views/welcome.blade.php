@@ -28,7 +28,7 @@
                                     <input type="text" name="password" class="form-control">                                                                        
                                  </div>
                              <button type="submit" class="btn btn-primary">Submit</button>
-                           
+                                
 
 
                          </form>
@@ -48,6 +48,7 @@
                                             
                                 </div>
                             <button type="submit" class="btn btn-success">Submit</button>
+                           
                         </form>
 
                 </div> 
