@@ -15,5 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
     
-    Route::post('/signup', 'userController@postSignUp');
+    Route::post('/signup', 'UserController@postSignUp');
     

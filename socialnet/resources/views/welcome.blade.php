@@ -14,7 +14,7 @@
 
                  <div class="col-md-6">
                      <h3>Sign Up</h3>
-                 <form action="{{route('/signup')}}" method="post">
+                 <form action="{!! url('signup') !!}" method="post">
  
                                  <div class="form-group">
                                     <label for="email">Your Email</label>
@@ -23,10 +23,13 @@
                                     <input type="text" name="first_name" class="form-control">
                                     <label for="email">Your Last Name</label>
                                     <input type="text" name="last_name" class="form-control">
+                                    <label for="Password">Your Password</label>
+                                    <input type="text" name="password" class="form-control">
                                 
                                              
                                  </div>
                              <button type="submit" class="btn btn-primary">Submit</button>
+                                <input type="hidden" nae="_token" value="{{Session::token()}}">
                          </form>
  
                  </div>
