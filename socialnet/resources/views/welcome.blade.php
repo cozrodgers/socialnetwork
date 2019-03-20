@@ -15,8 +15,8 @@
                  <div class="col-md-6">
                      <h3>Sign Up</h3>
                  <form action="{{route('signup')}}" method="post">
-                                    @csrf
-                                    <input type="hidden" name="_token" value="{{!! csrf_token() !!}}">
+                                    {{ @csrf_field() }}
+                                   
                                  <div class="form-group">
                                     <label for="email">Your Email</label>
                                     <input type="text" name="email" class="form-control">
