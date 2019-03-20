@@ -25,9 +25,7 @@
                                     <label for="email">Your Last Name</label>
                                     <input type="text" name="last_name" class="form-control">
                                     <label for="Password">Your Password</label>
-                                    <input type="text" name="password" class="form-control">
-                                
-                                             
+                                    <input type="text" name="password" class="form-control">                                                                        
                                  </div>
                              <button type="submit" class="btn btn-primary">Submit</button>
                            
@@ -39,7 +37,8 @@
 
                  <div class="col-md-6">
                     <h3>Sign in</h3>
-                        <form action="#" method="post">
+                        <form action="{{route('signin')}}" method="post">
+                            {{ @csrf_field() }}
 
                                 <div class="form-group">
                                    <label for="email">Your Email</label>
