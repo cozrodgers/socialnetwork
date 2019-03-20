@@ -20,10 +20,16 @@ class UserController extends Controller{
         $user->password = $password;
 
         $user->save();
-
+        
+        // AUTHENTIFICATES USER AND LOGS THEM IN ON SIGNUP
+        Auth::login($user);
+        //REDIRECTS USER TO DASHBOARD
         return redirect()->route('dashboard');
         
     }
+
+
+
 
     public function getDashboard()
     {
